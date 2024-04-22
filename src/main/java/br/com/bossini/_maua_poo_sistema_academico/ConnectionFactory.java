@@ -12,7 +12,7 @@ import java.sql.DriverManager;
  * @author rodrigo
  */
 public class ConnectionFactory {
-    /*private static String host = "mysql-31fb8d5a-poo-imt.h.aivencloud.com";
+    private static String host = "mysql-31fb8d5a-poo-imt.h.aivencloud.com";
     private static String porta = "13661";
     private static String db = "sistema_academico";
     private static String usuario = "avnadmin";
@@ -22,5 +22,5 @@ public class ConnectionFactory {
         throws Exception{
         String url = String.format("jdbc:mysql://%s:%s/%s", host, porta, db);
         return DriverManager.getConnection(url, usuario, senha);
-    }*/
+    }
 }
