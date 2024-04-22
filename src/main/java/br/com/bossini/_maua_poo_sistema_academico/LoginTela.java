@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author ferra
+ * @author ferraz
  */
 public class LoginTela extends javax.swing.JFrame {
 
