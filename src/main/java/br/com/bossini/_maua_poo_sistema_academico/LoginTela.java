@@ -92,12 +92,29 @@ public class LoginTela extends javax.swing.JFrame {
     }//GEN-LAST:event_sairButtonActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        String login = loginTextField.getText();
-        String senha = new String(senhaPasswordField.getPassword());
-        if(login.equals("admin") && senha.equals("admin"))
-            JOptionPane.showMessageDialog(null, "Bem-vindo!!");
-        else
-            JOptionPane.showMessageDialog(null, "Usuário Inválido!!");
+        try{
+            String login = loginTextField.getText();
+            String senha = new String(senhaPasswordField.getPassword());
+            //1. Construir um objeto Usuario
+            var u = new Usuario(login, senha);
+            //2. Construir um objeto DAO
+            var dao = new DAO();
+            //3. Chamar o método existe e tratar o resultado com if/else
+            if(dao.existe(u)){
+                JOptionPane.showMessageDialog(null, "Bem vindo");
+            }
+            else{
+                JOptionPane.showMessageDialog(
+                    null, "Par usuário/senha inválido"
+                );
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(
+                    null, "Coisas ruins aconteceram..."
+            );
+        }
     }//GEN-LAST:event_loginButtonActionPerformed
 
     /**
