@@ -1,5 +1,11 @@
-br/com/bossini/_maua_poo_sistema_academico/App.class
+br/com/bossini/_maua_poo_sistema_academico/Curso.class
 br/com/bossini/_maua_poo_sistema_academico/LoginTela$1.class
+br/com/bossini/_maua_poo_sistema_academico/DashboardTela$2.class
 br/com/bossini/_maua_poo_sistema_academico/LoginTela$3.class
+br/com/bossini/_maua_poo_sistema_academico/DashboardTela$1.class
+br/com/bossini/_maua_poo_sistema_academico/App.class
+br/com/bossini/_maua_poo_sistema_academico/CursoTela$1.class
+br/com/bossini/_maua_poo_sistema_academico/DashboardTela.class
 br/com/bossini/_maua_poo_sistema_academico/LoginTela.class
+br/com/bossini/_maua_poo_sistema_academico/CursoTela.class
 br/com/bossini/_maua_poo_sistema_academico/LoginTela$2.class

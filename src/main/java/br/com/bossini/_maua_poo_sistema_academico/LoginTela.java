@@ -102,6 +102,12 @@ public class LoginTela extends javax.swing.JFrame {
             //3. Chamar o método existe e tratar o resultado com if/else
             if(dao.existe(u)){
                 JOptionPane.showMessageDialog(null, "Bem vindo");
+                //1. Construir um objeto do tipo DashboardTela
+                var dt = new DashboardTela();
+                //2. Tornar a tela visível com setVisible
+                dt.setVisible(true);
+                //3. Descartar a tela atual com dispose
+                dispose();
             }
             else{
                 JOptionPane.showMessageDialog(
